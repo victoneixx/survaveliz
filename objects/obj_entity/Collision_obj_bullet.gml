@@ -1,0 +1,1 @@
+life -= global.arm_dam;

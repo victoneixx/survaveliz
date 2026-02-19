@@ -1,0 +1,2 @@
+instance_create_layer(x, y, layer, obj_entity);
+show_debug_message("Eu nasci , há 10.000 atras");

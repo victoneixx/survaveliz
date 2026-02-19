@@ -1,2 +1,2 @@
 instance_destroy(self);
-show_debug_message("MORRE!!!");
+show_debug_message("Fui destruida");
