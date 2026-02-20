@@ -1,4 +1,6 @@
-global.life_pl = 100;
+global.life_pl = 0;
+global.amount_enm = 0;
+//global.gameover = false;
 
 //Timer do jogo
 global.t_min = 0;
@@ -6,7 +8,7 @@ global.t_sec = 0;
 global.t_mil = 0;
 
 //Xp e level do jogador
-global.level = 9;
+global.level = 1;
 global.xp_mul = 0.5;
 global.xp_cut = 0;
 global.xp_max = [5, 10, 20, 40, 80, 160, 320, 640, 1280, 2560, 5120];

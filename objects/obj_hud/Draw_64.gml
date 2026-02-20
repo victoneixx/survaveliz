@@ -20,7 +20,15 @@ draw_set_halign(0);
 
 draw_set_halign(1);
 draw_set_valign(1);
-draw_text_ext_transformed(cam_w/2, 1, string(global.t_min) + ":" + string(global.t_sec), 0, 300, 0.38, 0.38, 0);
+
+global.timer = "";
+if(global.t_min > 9){global.timer += ""+string(global.t_min)}
+if(global.t_min < 10){global.timer += "0"+string(global.t_min)}
+global.timer += ":"
+if(global.t_sec > 9){global.timer += ""+string(global.t_sec)}
+if(global.t_sec < 10){global.timer += "0"+string(global.t_sec)}
+
+draw_text_ext_transformed(cam_w/2, 1, string(global.timer), 0, 300, 0.38, 0.38, 0);
 draw_set_valign(0);
 draw_set_halign(0);
 draw_set_color(c_white);

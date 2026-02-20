@@ -1,0 +1,13 @@
+draw_set_font(fnt_panel);
+draw_set_color(#005500);
+draw_set_halign(1);
+draw_set_valign(1);
+draw_text(cam_w/2, cam_h/2, "your level... " + string(global.level));
+draw_text(cam_w/2, cam_h/2+32, "your score... " + string(global.score));
+draw_text(cam_w/2, cam_h/2+64, "enemies killed... " + string(global.amount_enm));
+draw_text(cam_w/2, cam_h/2+96, "your game time..." + string(global.timer));
+draw_text(cam_w/2, cam_h/2+176, "Press space to return to the menu");
+draw_set_halign(0);
+draw_set_valign(0);
+draw_set_color(c_white);
+draw_set_font(0);
